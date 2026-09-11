@@ -1,1 +1,33 @@
-
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+<model-viewer
+src="20260911_01.glb"
+ios-src="20260911_01.usdz"
+ar
+ar-modes="scene-viewer"
+　 shadow-intensity="1"
+camera-controls
+touch-action="pan-y"
+>
+<button id="custom-ar-button" slot="ar-button">押してね♪</button>
+</model-viewer>
+<style>
+model-viewer {
+width: 100%;
+height: 640px;
+background-color: greenyellow;
+}
+#custom-ar-button {
+font-size: 50px;
+position: absolute;
+bottom: 5%;
+left: 10%;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+background-color: #EC008C; /* 背景色 */
+color: white; /* 文字色 */
+border: none; /* ボーダーを削除 */
+padding: 10px 15px; /* 内側の余白 */
+border-radius: 20px; /* 角の丸み */
+}
+</style>
